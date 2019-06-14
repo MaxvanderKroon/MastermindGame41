@@ -1,0 +1,2 @@
+inst = "Instructies.."
+print(inst)
