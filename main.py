@@ -1,7 +1,7 @@
 uitleg = "..."
 print(uitleg)
 
-#random getalen reeks pakken
+#random getalen code maken
 from random import randint
 code = []
 for i in range(0, 4):
@@ -9,10 +9,9 @@ for i in range(0, 4):
 print(code)
 
 #niput van user vragen
-userInput = input("geef")
-print(userInput)
-#check input
-if userInput == randomcode:
-  print ("Good job! You cracked the code!")
-else :
-  print ("Try again!")
+UserInput = input("Type your guess: ")
+print(UserInput)
+if UserInput == code:
+  print ("You solved the code!")
+else:
+  print ("hoi")
