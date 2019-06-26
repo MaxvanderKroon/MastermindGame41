@@ -2,9 +2,11 @@ uitleg = "..."
 print(uitleg)
 
 #random getalen reeks pakken
-import random
-list = ["1", "2"]
-print (random.choice(list))
+from random import randint
+code = []
+for i in range(0, 4):
+  code.append((randint(0,6)))
+print(code)
 
 #niput van user vragen
 userInput = input("geef")
