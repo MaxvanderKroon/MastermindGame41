@@ -7,7 +7,6 @@ while c == True:
   code = []
   for i in range(0, 4):
     code.append((randint(0,6)))
-  print(code)
 
   i = 10
   while True:
