@@ -6,6 +6,7 @@ for i in range(0, 4):
   code.append((randint(0,6)))
 print(code)
 
+i = 10
 while True:
   UserInput = input("Type your guess: ")
   if UserInput == code:
@@ -23,3 +24,12 @@ while True:
           f = f + 1
       f = f - g
       print(str(f) + " numbers are correct but not in the right spot")
+    else:
+      print("Congrualations, you solved the puzzle!")
+      break
+  i = i - 1
+  print(str(i) + " chances left")
+  if i == 0 :
+    print ("Game over")
+    break
+
