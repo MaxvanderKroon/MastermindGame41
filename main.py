@@ -22,8 +22,12 @@ while c == True:
       if g != 4:
         print(str(g) + " numbers are in the right place")
         f = 0
+        codelist = []
+        for m in code:
+          codelist.append(m)
         for k in range(0, 4):
-          if int(UserInput[k]) in code:
+          if int(UserInput[k]) in codelist:
+            codelist.remove(int(UserInput[k]))
             f = f + 1
         f = f - g
         print(str(f) + " numbers are correct but not in the right spot")
