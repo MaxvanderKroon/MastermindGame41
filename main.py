@@ -17,3 +17,9 @@ while True:
         g = g + 1
     if g != 4:
       print(str(g) + " numbers are in the right place")
+      f = 0
+      for k in range(0, 4):
+        if int(UserInput[k]) in code:
+          f = f + 1
+      f = f - g
+      print(str(f) + " numbers are correct but not in the right spot")
