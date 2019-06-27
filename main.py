@@ -1,5 +1,4 @@
-uitleg = "..."
-print(uitleg)
+print("In this game you will try to crack a code! The computer will tell you how many numbers are in the right place or correct bu not in the right spot. You got 10 chances to crack the code! Good luck!")
 
 from random import randint
 code = []
