@@ -6,8 +6,8 @@ while True:
   code = []
   for i in range(0, 4):
     code.append((randint(0,9)))
-
   i = 10
+  i > 10
   while True:
     UserInput = input("Type your guess: ")
     if UserInput == '1955' :
