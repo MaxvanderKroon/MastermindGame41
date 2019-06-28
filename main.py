@@ -20,9 +20,13 @@ while True:
       print("You solved the code!")
     if len(UserInput) != 4:
       print("Error: Your Input must consist of 4 characters")
+      i = i - 1
+      print(str(i) + " chances left")
       continue
     if not UserInput.isdigit():
       print('Error: Your Input should be only numbers')
+      i = i - 1
+      print(str(i) + " chances left")
       continue
     else:
       g = 0
