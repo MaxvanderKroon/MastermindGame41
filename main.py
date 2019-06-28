@@ -11,13 +11,16 @@ while True:
   while True:
     UserInput = input("Type your guess: ")
     if UserInput == '1955' :
-      print ("You guessed the birthday of Mr. Bent!")
+      print("You guessed the birthyear of Mr. Bent!")
       i = i + 1
     if UserInput == '1980':
-      print("You guessed the birthday of Mr. Logtenberg!")
+      print("You guessed the birthyear of Mr. Logtenberg!")
       i = i + 1
     if UserInput == code:
       print("You solved the code!")
+    if len(UserInput) != 4:
+      print("Error: Your Input must consist of 4 characters")
+      i = i + 1
     else:
       g = 0
       for j in range(0, 4):
