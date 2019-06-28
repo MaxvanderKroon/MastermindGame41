@@ -1,12 +1,12 @@
 c = True
 while c == True:
 
-  print("In this game you will try to crack a code! The computer will tell you how many numbers are in the right place or correct bu not in the right spot. You got 10 chances to crack the code! Good luck!")
+  print("In this game you will try to crack a code! The computer will tell you how many numbers are in the right place or correct but not in the right spot. You got 10 chances to crack the code! Good luck!")
 
   from random import randint
   code = []
   for i in range(0, 4):
-    code.append((randint(0,6)))
+    code.append((randint(0,9)))
 
   i = 10
   while True:
