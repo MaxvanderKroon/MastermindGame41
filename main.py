@@ -13,8 +13,10 @@ while c == True:
     UserInput = input("Type your guess: ")
     if UserInput == '1955' :
       print ("You guessed the birthday of Mr. Bent!")
+      i = i + 1
     if UserInput == '1990':
       print("You guessed the birthday of Mr. Logtenberg!")
+      i = i + 1
     if UserInput == code:
       print("You solved the code!")
     else:
