@@ -1,8 +1,7 @@
 print("In this game you will try to crack the code! The computer will tell you how many numbers are in the right place, or correct but not in the right spot. You get 10 chances to crack the code! The code is 4 numbers long. Good luck!")
 
-c = True
-while c == True:
-
+while True:
+  
   from random import randint
   code = []
   for i in range(0, 4):
