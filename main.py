@@ -1,4 +1,4 @@
-print("In this game you will try to crack the code! The computer will tell you how many numbers are in the right place, or correct but not in the right spot. You get 10 chances to crack the code! The code is 4 numbers long. Good luck!")
+print("In this game you must try to crack the code! The computer will tell you how many numbers are in the spot, or correct but not in the right spot. You have 10 chances to crack the code. The code is 4 numbers long. Good luck!")
 
 while True:
   
@@ -19,14 +19,14 @@ while True:
     if UserInput == code:
       print("You solved the code!")
     if len(UserInput) != 4:
-      print("Error: Your Input must consist of 4 characters")
+      print("Error: Your Input must consist of 4 characters.")
       i = i - 1
       print(str(i) + " chances left")
       continue
     if not UserInput.isdigit():
-      print('Error: Your Input should be only numbers')
+      print('Error: Your Input should be only numbers.')
       i = i - 1
-      print(str(i) + " chances left")
+      print(str(i) + " chances left.")
       continue
     else:
       g = 0
@@ -34,7 +34,7 @@ while True:
         if str(code[j]) == (UserInput[j]):
           g = g + 1
       if g != 4:
-        print(str(g) + " numbers are in the right place")
+        print(str(g) + " numbers are in the right place.")
         f = 0
         codelist = []
         for m in code:
@@ -44,12 +44,12 @@ while True:
             codelist.remove(int(UserInput[k]))
             f = f + 1
         f = f - g
-        print(str(f) + " numbers are correct but not in the right spot")
+        print(str(f) + " numbers are correct, but not in the right spot.")
       else:
-        print("Congrualations, you solved the puzzle!")
+        print("Congrualations, you cracked the code!")
         break
     i = i - 1
-    print(str(i) + " chances left")
+    print(str(i) + " chances left.")
     if i == 0 :
       print ("Game over")
       break
